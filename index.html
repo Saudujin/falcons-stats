@@ -1,44 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>إحصائيات قنوات فالكونز</title>
   <link rel="stylesheet" href="./css/styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-  <header>
-    <h1>إحصائيات قنوات فالكونز</h1>
-    <div class="header-controls">
-      <button id="theme-toggle" class="theme-toggle">الوضع الليلي</button>
-      <select id="sort-select" class="sort-select">
-        <option value="subscribers-desc">الأكثر مشتركين</option>
-        <option value="subscribers-asc">الأقل مشتركين</option>
-        <option value="name">ترتيب أبجدي</option>
-        <option value="remaining">الأقرب للمليون التالي</option>
-      </select>
-    </div>
-  </header>
-
-  <div id="loading-overlay" class="loading-overlay">
-    <div class="spinner"></div>
-  </div>
-
-  <div id="error-message" class="error-message"></div>
-  
-  <div id="update-info" class="update-info">
-    يتم تحديث أعداد المشتركين تلقائيًا كل 15 ثانية
-  </div>
-
-  <div id="channels-container" class="channels-container">
-    <!-- Channel cards will be added here -->
-  </div>
-
-  <footer>
-    <p>إحصائيات قنوات فالكونز &copy; 2025</p>
-  </footer>
-
+  <h1>Falcons Stats</h1>
+  <div id="channels-container">جارٍ التحميل...</div>
+  <script src="./js/live.core.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>
